@@ -28,6 +28,7 @@ def show_fps(win, font, clock,fps_history):
     return fps_history
 
 def main():
+    path = "books/expample.fb2"
 
     width = 1920
     height = 1080
@@ -42,7 +43,6 @@ def main():
     index_end = save.load()
 
     text = ""
-    #text_to_type = "Одного разу, прокинувшись, ти бачиш за вікном вогонь. Ти його не розпалював. Але гасити його доведеться й тобі"
     get_text = read.get_text(index_end)
     text_to_type, index_start, index_end = get_text[0], get_text[1], get_text[2]
     text_max_length = 1000
@@ -57,7 +57,6 @@ def main():
     run = True
     fps_history = []
     while run:
-        #pygame.time.delay(100)
         win.fill(BLACK)
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
