@@ -1,3 +1,8 @@
+books/example.fb2
+save/save.ttsf
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
